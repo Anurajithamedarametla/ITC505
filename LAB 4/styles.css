@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #007bff; /* Blue color for h1 */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #dc3545; /* Green color for h2 */
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #dc3545; /* Red color for h3 */
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.addendum-point {
+    margin-bottom: 10px;
+}
+
+.last-updated {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
