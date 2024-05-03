@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lights Out Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <center><h4>Lights Out Game(5x5)</h4></center>
+    <div id="controls">
+        <button id="newGameButton">New Game</button>
+        <div>Steps: <span id="stepCounter">0</span></div>
+        <div>Time: <span id="timer">0</span> seconds</div>
+    </div>
+    <div id="gameBoard"></div>
+    <script src="script.js"></script>
+    <section id="addendum">
+        <h2>Addendum</h2>
+        <h2>Designing a Responsive Grid Layout</h2>
+    <ul>
+        <li><strong>Challenge:</strong> Creating a responsive 5x5 grid layout across various screen sizes.</li>
+        <li><strong>Solution:</strong> Utilizing CSS Grid for a flexible and visually appealing grid structure.</li>
+        <li><strong>Insight:</strong> CSS Grid simplifies complex layouts, aiding alignment and spacing in games.</li>
+    </ul>
+
+    <h2>Dynamically Creating Grid Elements</h2>
+    <ul>
+        <li><strong>Challenge:</strong> Generating grid elements dynamically using JavaScript.</li>
+        <li><strong>Solution:</strong> Utilizing JavaScript loops to create and append div elements to the game board.</li>
+        <li><strong>Insight:</strong> Dynamic element creation enhances scalability and maintainability.</li>
+    </ul>
+
+    <h2>Implementing Light Toggle Logic</h2>
+    <ul>
+        <li><strong>Challenge:</strong> Ensuring clicking a light toggles its state and adjacent lights.</li>
+        <li><strong>Solution:</strong> JavaScript function to toggle clicked light and its neighbors.</li>
+        <li><strong>Insight:</strong> Breaking down the problem simplifies logic and implementation.</li>
+    </ul>
+
+    <h2>Randomizing the Starting State</h2>
+    <ul>
+        <li><strong>Challenge:</strong> Generating a random solvable starting configuration.</li>
+        <li><strong>Solution:</strong> Function simulating random clicks on an all-off board.</li>
+        <li><strong>Insight:</strong> Careful randomization ensures solvability.</li>
+    </ul>
+
+    <h2>Handling Win Conditions</h2>
+    <ul>
+        <li><strong>Challenge:</strong> Detecting successful turning off of all lights.</li>
+        <li><strong>Solution:</strong> Function checking state after every move and triggering win alert.</li>
+        <li><strong>Insight:</strong> Monitoring elements' state provides timely feedback.</li>
+    </ul>
+
+    <h2>Implementing a Step Counter</h2>
+    <ul>
+        <li><strong>Challenge:</strong> Tracking and displaying player moves.</li>
+        <li><strong>Solution:</strong> Counter variable updating with each click, displayed on the UI.</li>
+        <li><strong>Insight:</strong> Real-time metrics enhance user experience.</li>
+    </ul>
+
+    <h2>Creating a Timer</h2>
+    <ul>
+        <li><strong>Challenge:</strong> Implementing a game duration timer.</li>
+        <li><strong>Solution:</strong> Utilizing setInterval to update the timer.</li>
+        <li><strong>Insight:</strong> Timers add dynamic elements to games.</li>
+    </ul>
+
+    <h2>Adding a "New Game" Feature</h2>
+    <ul>
+        <li><strong>Challenge:</strong> Allowing players to restart the game.</li>
+        <li><strong>Solution:</strong> Implementing a "New Game" button and associated function.</li>
+        <li><strong>Insight:</strong> User control improves usability.</li>
+    </ul>
+    </section>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
